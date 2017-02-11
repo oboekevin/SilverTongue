@@ -7,6 +7,14 @@ from flask import render_template
 from FlaskWebProject1 import app
 
 @app.route('/')
+def root():
+    """Renders the root page."""
+    return render_template(
+        'index.html',
+        title='SilverTongue',
+        year=datetime.now().year,
+    )
+
 @app.route('/home')
 def home():
     """Renders the home page."""
@@ -23,7 +31,7 @@ def contact():
         'contact.html',
         title='Contact',
         year=datetime.now().year,
-        message='Your contact page.'
+        message='Contributors and sources.'
     )
 
 @app.route('/about')
@@ -33,5 +41,5 @@ def about():
         'about.html',
         title='About',
         year=datetime.now().year,
-        message='Your application description page.'
+        message=''
     )
