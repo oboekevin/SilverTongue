@@ -49,3 +49,12 @@ def about():
         year=datetime.now().year,
         message=''
     )
+
+@app.route('/tryit')
+def tryit():
+    """Renders the try it page."""
+    return render_template(
+        'tryit.html',
+        title='Learn',
+        year=datetime.now().year,
+    )
