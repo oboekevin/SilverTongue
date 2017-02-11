@@ -1,9 +1,5 @@
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json
 
-pathToFileInDisk = r'C://Users/roman/Documents/SilverTongue/vocabulary.jpg'
-with open( pathToFileInDisk, 'rb' ) as f:
-    file = f.read()
-
 headers = {
     # Request headers
     'Content-Type': 'application/json',
@@ -18,7 +14,7 @@ params = urllib.parse.urlencode({
 
 try:
     conn = http.client.HTTPSConnection('westus.api.cognitive.microsoft.com')
-    conn.request("POST", "/vision/v1.0/ocr?%s" % params, file, headers)
+    conn.request("POST", "/vision/v1.0/ocr?%s" % params, '{"url":"http://goldameirspanish.weebly.com/uploads/4/7/0/9/4709551/vocabulary.jpg"}', headers)
     response = conn.getresponse()
     data = response.read().decode('utf-8')
     obj = json.loads(data)
