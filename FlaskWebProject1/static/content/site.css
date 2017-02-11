@@ -44,3 +44,8 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+.img-with-text {
+    float: left;
+    margin-right: 1em;
+    text-align: center;
+}
