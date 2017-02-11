@@ -1,13 +1,6 @@
 ﻿.names {
     font-weight: bold;
 }
-.profile {
-    float: left;
-    width: 24%;
-    margin-right: 1%;
-    margin-bottom: 0.5em;
-    background-size: cover;
-}
 
 body {
     padding-top: 50px;
