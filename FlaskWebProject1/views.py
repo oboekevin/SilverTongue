@@ -60,6 +60,7 @@ def tryit():
     )
 @app.route('/results')
 def results():
+    import silvertongue
     """Renders the Results page."""
     return render_template(
         'results.html',
