@@ -6,19 +6,17 @@
 <h3>{{ message }}</h3>
 
 <div class="names">
-	<div class="img-with-text"><img src="images/CarlCall.png" border="0" alt="Carl Call"   width="177" height="229" style="border: 2px solid black;" />
-	<p>Carl Call<br />(931)268-2040<br /><a href="mailto:carlcall@centergrovecoc.com">Email Carl Call</a>  </p>
-	</div>
-	<div class="img-with-text"><img src="images/sg.png" border="0" alt="Sjon Gentry" width="177" height="229" style="border: 2px solid black;" />
-	<p>Sjon Gentry<br />(931)268-3273<br /><a href="mailto:sjongentry@centergrovecoc.com">Email Sjon Gentry</a></p>
-	</div>
-	<div class="img-with-text"><img src="images/jm.png" border="0" alt="John Mabery" width="177" height="229" style="border: 2px solid black;" />
-	<p>John Mabery<br />(931)268-0651<br /><a href="mailto:johnmabery@centergrovecoc.com">Email John Mabery</a> </p>
-	</div>
-	<div class="img-with-text"><img src="images/tr.png" border="0" alt="Ted Ragland" width="177" height="229" style="border: 2px solid black;" />
-	<p>Ted Ragland<br />(931)268-9387</p>
-	</div>
-	</div>
+	<li><img src="{{ url_for('static', filename='kevin_profile.jpg') }}" alt="Kevin Chaplin" style="width:25%; height:same-as-width;"></li>
+	
+	<li><img src="{{ url_for('static', filename='roman_profile.jpg') }}" alt="Roman Kasparian" style="width:25%; height:same-as-width;"></li>
+	
+	<li><img src="{{ url_for('static', filename='Justin_Yearbook_2015.JPG') }}" alt="Justin Nguyen" style="width:25%; height:same-as-width;"></li>
+	
+	<li><img src="{{ url_for('static', filename='surbhi_profile.jpg') }}" alt="Surbhi Patel" style="width:25%; height:same-as-width;"></li>
+	<p>Kevin Chaplin</p>
+	<p>Roman Kasparian</p>
+	<p>Justin Nguyen</p>
+	<p>Surbhi Patel</p>
 
 <p></p>
 
