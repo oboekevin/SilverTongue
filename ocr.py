@@ -1,5 +1,8 @@
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json
 
+def getForeignWords():
+    return ["gato", "hola", "soy", "aqui"]
+
 headers = {
     # Request headers
     'Content-Type': 'application/json',
