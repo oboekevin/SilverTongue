@@ -97,7 +97,7 @@ def main():
         print(line.encode('utf8'))
         results = api_bing_images_search(api_translate_text(line, 'en'))
         picurl = random.choice(results["value"])["thumbnailUrl"]
-        print("<img src='"+picurl"'></img>")
+        print("<img src='"+picurl+"'></img>")
         description = api_vision_describe(picurl)
         captions = [caption["text"] for caption in description["description"]["captions"]]
         for caption in captions:
