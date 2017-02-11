@@ -35,7 +35,7 @@ def contact():
     """Renders the contact page."""
     return render_template(
         'contact.html',
-        title='Meet the team',
+        title='Meet the Team',
         year=datetime.now().year,
         message=''
     )
