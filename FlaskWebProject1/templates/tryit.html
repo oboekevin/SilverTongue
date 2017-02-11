@@ -22,14 +22,9 @@
 <p>Enter the URL of the image you wish to translate</p>
 
 <form action=" " method="get">
-
-	
 <input type="text" name="filename" /> 
     <a href="{{ url_for('results') }}" input type="submit" name="uploadButton" class="upbtn" value="Submit"/>
 	<p>Translate</p>
-	
-
-
 </form><br>
 
 
@@ -37,13 +32,18 @@
 <p><a href="{{ url_for('results') }}" class="btn btn-primary btn-large">Enter &raquo;</a></p>
 
 <input type="file" id="myFile">
-<button onclick="myFunction()">Submit</button>
+<button onclick="myFunction()">
+<a href="{{ url_for('results') }}" input type="submit" name="uploadButton" class="upbtn" value="Submit"/>
+<p>Translate</p>
 
 <script>
 function myFunction() {
     var x = document.getElementById("myFile");
     x.disabled = true;
+	
 }
 </script>
+
+<button onclick="myFunction()">Submit</button>
 
 {% endblock %}
