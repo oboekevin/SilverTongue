@@ -7,6 +7,7 @@ from flask import render_template
 from FlaskWebProject1 import app
 import ocr
 import xml.etree.ElementTree as ET
+import os
 
 @app.route('/')
 def root():
@@ -60,5 +61,5 @@ def tryit():
     )
 @app.route('/results')
 def results():
-    output = execute('./silvertongue')
+    output = os.popen("python silvertongue.py").read()
     return render_template('results.html',output=output)
