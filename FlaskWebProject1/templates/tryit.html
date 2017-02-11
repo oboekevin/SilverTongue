@@ -17,6 +17,13 @@
 </ul>
 <h3>{{ message }}</h3>
 
+<form action=" " method="get">
+  Upload URL: <input type="URL" name="URL"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>or</p>
+
 <input type="file" id="myFile">
 <button onclick="myFunction()">Submit</button>
 
@@ -26,10 +33,5 @@ function myFunction() {
     x.disabled = true;
 }
 </script>
-
-<form action=" " method="get">
-  Upload URL: <input type="URL" name="URL"><br>
-  <input type="submit" value="Submit">
-</form>
 
 {% endblock %}
