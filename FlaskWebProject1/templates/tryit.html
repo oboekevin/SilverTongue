@@ -30,21 +30,6 @@
 	
 </form><br>
 
-<p>or</p>
 
-<input type="file" id="myFile">
-<button onclick="myFunction()">
-<a href="{{ url_for('results') }}" input type="submit" name="uploadButton" value="Submit"/>
-<p>Translate</p>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myFile");
-    x.disabled = true;
-	
-}
-</script>
-
-<button onclick="myFunction()">Submit</button>
 
 {% endblock %}
