@@ -60,10 +60,5 @@ def tryit():
     )
 @app.route('/results')
 def results():
-    import silvertongue
-    """Renders the Results page."""
-    return render_template(
-        'results.html',
-        title='Results',
-        year=datetime.now().year,
-    )
+    output = execute('./silvertongue')
+    return render_template('results.html',output=output)
