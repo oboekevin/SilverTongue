@@ -8,8 +8,9 @@
 </p>
 <h3>{{ message }}</h3>
 <div class="names">
-	<img src="{{ url_for('static', filename='kevin.jpg') }}" alt="Kevin Chaplin" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 0.5em;">
-	
+	<div class="profile">
+	<img src="{{ url_for('static', filename='kevin.jpg') }}" alt="Kevin Chaplin">
+	</div>
 	<img src="{{ url_for('static', filename='roman.jpg') }}" alt="Roman Kasparian" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 0.5em;">
 	
 	<img src="{{ url_for('static', filename='justin.jpg') }}" alt="Justin Nguyen" style="float: left; width: 24%; margin-right: 1%; margin-bottom: 0.5em;">
