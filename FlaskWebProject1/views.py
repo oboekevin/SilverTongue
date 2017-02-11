@@ -58,3 +58,11 @@ def tryit():
         title='Learn',
         year=datetime.now().year,
     )
+@app.route('/uploadimage')
+def uploadimage():
+    """Renders the upload image page."""
+    return render_template(
+        'uploadimage.html',
+        title='Upload Image',
+        year=datetime.now().year,
+    )
